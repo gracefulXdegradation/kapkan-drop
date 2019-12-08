@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Shapiro 97';
+  src: url(../fonts/OGJ_Type_Design__Shapiro_97_Air_Extd.otf);
+}
+
+@keyframes drop {
+  from {
+    transform: scale(1, 1);
+    transform-origin: 0% 0%;
+  }
+
+  12% {
+    transform: scale(1.6574585635359116, 1);
+    transform-origin: 0% 0%;
+  }
+
+  13% {
+    transform: translate(238px, 0) scale(1.6574585635359116, 1);
+    transform-origin: 100% 0%;
+  }
+ 
+  25% {
+    transform: translate(238px, 0) scale(1, 1);
+    transform-origin: 100% 0;
+  }
+
+  26% {
+    transform: translate(238px, 0) scale(1, 1);
+    transform-origin: right top;
+  }
+
+  30% {
+    transform: translate(238px, 0) scale(1, 1);
+    transform-origin: right top;
+  }
+
+  50% {
+    transform: translate(238px, 60px) scale(1, 9);
+    transform-origin: right top;
+  }
+
+  51% {
+    transform: translate(238px, 60px) scale(1, 9);
+    transform-origin: left top;
+  }
+
+  75% {
+    transform: translate(0, 60px) scale(0.5, 9);
+    transform-origin: left top;
+  }
+
+  91% {
+    transform: translate(0, 0) scale(0.5, 1);
+    transform-origin: left top;
+  }
+
+  to {
+    transform: scale(1, 1);
+    transform-origin: left top;
+  }
+}
+
+@import 'variables';
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CCC;
+}
+
+.word {
+  font-family: 'Shapiro 97';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  height: 60px;
+}
+
+#word-1 {
+  display: block;
+  transform-origin: left top;
+  //animation: drop 4s linear infinite;
+}
+
