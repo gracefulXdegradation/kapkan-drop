@@ -1,9 +1,9 @@
-# Lava Sausage in the Skies
+# Kapkan Drop
 
 ## Installation
 
 ```
-git clone git@github.com:gracefulXdegradation/lavasausageintheskies.git
+git clone git@github.com:gracefulXdegradation/kapkan_drop.git
 npm i
 ```
 
